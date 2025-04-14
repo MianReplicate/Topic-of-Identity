@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-
-namespace Better_Loving.Mian.CustomAssets
+﻿
+namespace Topic_of_Identity.Mian.CustomAssets
 {
     public class CommunicationTopics
     {
@@ -8,42 +7,22 @@ namespace Better_Loving.Mian.CustomAssets
         {
             Add(new CommunicationAsset
             {
-                id = "orientation",
+                id = "identity",
                 rate = 0.5f,
-                check = pActor => QueerTraits.GetPreferenceFromActor(pActor, false) != Preference.Inapplicable 
-                                  && QueerTraits.GetPreferenceFromActor(pActor, true) != Preference.Inapplicable
-                                  && QueerTraits.GetQueerTraits(pActor, true).Count >= 2
-                                  && !pActor.hasCultureTrait("orientationless"),
+                check = actor => Util.IsTrans(actor) && (actor.hasCultureTrait("transphobic") || actor.hasCultureTrait("transphile")),
                 pot_fill = (actor, sprites) =>
                 {
-                    if (QueerTraits.GetQueerTraits(actor, true).Count < 2) return;
-                    var unfitPreferences = new List<Preference>();
-                    if (actor.hasCultureTrait("homophobic"))
+                    sprites.Add(AssetManager.traits.get("transgender").getSprite());
+                    if (actor.hasCultureTrait("transphobic"))
                     {
-                        unfitPreferences.Add(Preference.All);
-                        unfitPreferences.Add(Preference.SameSex);
-                        unfitPreferences.Add(Preference.SameOrDifferentSex);
+                        sprites.Add(AssetManager.culture_traits.get("transphobic").getSprite());
+                        actor.changeHappiness("identity_does_not_fit");
                     }
-                    if (actor.hasCultureTrait("heterophobic"))
+                    else if (actor.hasCultureTrait("transphile"))
                     {
-                        unfitPreferences.Add(Preference.DifferentSex);
+                        sprites.Add(AssetManager.culture_traits.get("transphile").getSprite());
+                        actor.changeHappiness("identity_fits");
                     }
-
-                    var queerTraits = QueerTraits.GetQueerTraits(actor, true);
-                    var sexualPreference = queerTraits[0].preference;
-                    var sexualSprite = queerTraits[0].getSprite();
-                    var romanticPreference = queerTraits[1].preference;
-                    var romanticSprite = queerTraits[1].getSprite();
-
-                    if (sexualSprite == null || romanticSprite == null)
-                        return;
-                    sprites.Add(sexualSprite);
-                    sprites.Add(romanticSprite);
-
-                    if (unfitPreferences.Contains(sexualPreference) || unfitPreferences.Contains(romanticPreference))
-                        actor.changeHappiness("orientation_does_not_fit");
-                    else
-                        actor.changeHappiness("orientation_fits");
                 } 
             });
         }

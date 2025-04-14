@@ -7,20 +7,9 @@ namespace Better_Loving.Mian.CustomAssets
     {
         public static void Init()
         {
-            var orientationLess = new CultureTrait
+            var transphobic = new CultureTrait
             {
-                id = "orientationless",
-                group_id = "miscellaneous",
-                needs_to_be_explored = true,
-                rarity = Rarity.R1_Rare,
-                can_be_in_book = true,
-                can_be_removed = true,
-                can_be_given = true
-            };
-
-            var homophobic = new CultureTrait
-            {
-                id = "homophobic",
+                id = "transphobic",
                 group_id = "worldview",
                 needs_to_be_explored = true,
                 rarity = Rarity.R1_Rare,
@@ -29,9 +18,9 @@ namespace Better_Loving.Mian.CustomAssets
                 can_be_given = true
             };
 
-            var heterophobic = new CultureTrait
+            var transphile = new CultureTrait
             {
-                id = "heterophobic",
+                id = "transphile",
                 group_id = "worldview",
                 needs_to_be_explored = true,
                 rarity = Rarity.R1_Rare,
@@ -40,78 +29,14 @@ namespace Better_Loving.Mian.CustomAssets
                 can_be_given = true
             };
 
-            homophobic.opposite_traits = new HashSet<CultureTrait>();
-            homophobic.opposite_traits.Add(orientationLess);
+            transphobic.opposite_traits = new HashSet<CultureTrait>();
+            transphobic.opposite_traits.Add(transphile);
             
-            heterophobic.opposite_traits = new HashSet<CultureTrait>();
-            heterophobic.opposite_traits.Add(orientationLess);
+            transphile.opposite_traits = new HashSet<CultureTrait>();
+            transphile.opposite_traits.Add(transphobic);
             
-            orientationLess.opposite_traits = new HashSet<CultureTrait>();
-            orientationLess.opposite_traits.Add(homophobic);
-            orientationLess.opposite_traits.Add(heterophobic);
-            
-            // Add(homophobic, List.Of("orc", "demon"), List.Of("biome_swamp", "biome_infernal", "biome_corrupted"));
-            // Add(heterophobic, List.Of("flower_bud", "garl"), List.Of("biome_candy"));
-            // Add(orientationLess, List.Of("angle", "snowman"), List.Of("biome_crystal"));
-            
-            Add(homophobic, List.Of("orc", "demon"));
-            Add(heterophobic, List.Of("flower_bud", "garl"));
-            Add(orientationLess, List.Of("angle", "snowman"));
-            // now influenced by reproduction methods
-            
-            Add(new CultureTrait
-            {
-                id = "incest",
-                group_id = "miscellaneous",
-                needs_to_be_explored = true,
-                rarity = Rarity.R1_Rare,
-                can_be_in_book = true,
-                can_be_removed = true,
-                can_be_given = true
-            }, List.Of("orc", "demon"), List.Of("biome_infernal", "biome_corrupted"));
-            
-            Add(new CultureTrait
-            {
-                id = "committed",
-                group_id = "miscellaneous",
-                needs_to_be_explored = true,
-                rarity = Rarity.R1_Rare,
-                can_be_in_book = true,
-                can_be_removed = true,
-                can_be_given = true
-            }, List.Of("elf", "coolbeak"), List.Of("biome_celestial", "biome_flower"));
-            
-            Add(new CultureTrait
-            {
-                id = "mature_dating",
-                group_id = "miscellaneous",
-                needs_to_be_explored = true,
-                rarity = Rarity.R1_Rare,
-                can_be_in_book = true,
-                can_be_removed = true,
-                can_be_given = true
-            }, List.Of("human", "elf", "dwarf"), List.Of("biome_grass", "biome_maple"));
-
-            Add(new CultureTrait
-            {
-                id = "sexual_expectations",
-                group_id = "miscellaneous",
-                needs_to_be_explored = true,
-                rarity = Rarity.R1_Rare,
-                can_be_in_book = true,
-                can_be_removed = true,
-                can_be_given = true
-            }, List.Of("elf"), List.Of("biome_maple"));
-            
-            Add(new CultureTrait
-            {
-                id = "scar_of_incest",
-                group_id = "miscellaneous",
-                rarity = Rarity.R1_Rare,
-                can_be_given = true,
-                can_be_in_book = false,
-                can_be_removed = true,
-            }, List.Of("orc", "demon"), List.Of("biome_infernal", "biome_corrupted"));
+            Add(transphile, new List<string>{"angle", "elf"}, new List<string>{"biome_crystal", "biome_enchanted"});
+            Add(transphobic, new List<string>{"orc", "demon"}, new List<string>{"biome_corrupted"});
         }
 
         private static void Add(CultureTrait trait, List<string> actorAssets=null, List<string> biomeAssets=null)

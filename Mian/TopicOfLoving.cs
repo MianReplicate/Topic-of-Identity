@@ -4,15 +4,9 @@ using Better_Loving.Mian.CustomAssets.AI;
 using NeoModLoader.api;
 using HarmonyLib;
 using NeoModLoader.General;
+using Topic_of_Identity.Mian.CustomAssets;
 
-/*
-
-- queer traits arent 100% being added
-
-- sprites are offseted upwards for our speech bubbles idk why :(
-
-*/
-namespace Better_Loving.Mian
+namespace Topic_of_Identity.Mian
 {
     public class TopicOfLoving : BasicMod<TopicOfLoving>
     {
@@ -21,9 +15,7 @@ namespace Better_Loving.Mian
         protected override void OnModLoad()
         {
             Mod = this;
-            // Initialize your mod.
-            // Methods are called in the order: OnLoad -> Awake -> OnEnable -> Start -> Update
-            Util.LogWithId("Making people more loveable!");
+            Util.LogWithId("Giving identities to people!");
             
             var localeDir = GetLocaleFilesDirectory(GetDeclaration());
             foreach (var file in Directory.GetFiles(localeDir))
@@ -40,23 +32,16 @@ namespace Better_Loving.Mian
 
             LM.ApplyLocale();
             
-            QueerTraits.Init();
             ActorTraits.Init();
             CultureTraits.Init();
-            SubspeciesTraits.Init();
-            StatusEffects.Init();
             Happiness.Init();
             CommunicationTopics.Init();
             ActorBehaviorTasks.Init();
             Decisions.Init();
-            GodPowers.Init();
-            
-            // Managers
-            // DateableManager.Init();
         }
         private void Awake()
         {
-            var harmony = new Harmony("netdot.mian.topicofloving");
+            var harmony = new Harmony("netdot.mian.topicofidentity");
             harmony.PatchAll();
         }
     }

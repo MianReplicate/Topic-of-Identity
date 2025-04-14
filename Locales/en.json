@@ -1,208 +1,35 @@
 ﻿{
-  "status_title_went_on_date": "Went on a Date",
-  "status_description_went_on_date": "A world for two",
+  "happiness_true_gender": "Realization on Gender",
+  "happiness_dialog_true_gender_0": "That explains why I always felt so off..",
+  "happiness_dialog_true_gender_1": "This is truly who I am and I won't let anyone tell me otherwise.",
+  "happiness_dialog_true_gender_2": "I'm so glad that I figured this out sooner than later..",
+  "happiness_dialog_true_gender_3": "It feels so great to have finally realized this..",
+
+  "happiness_identity_fits": "Identity isn't judged",
+  "happiness_dialog_identity_fits_0": "I feel so happy being able to embrace who I am!",
+  "happiness_dialog_identity_fits_1": "This is really how it feels to be a..",
+
+  "happiness_identity_does_not_fit": "Identity is despised",
+  "happiness_dialog_identity_does_not_fit_0": "It just hurts..",
+  "happiness_dialog_identity_does_not_fit_1": "Why couldn't God give me the other set of chromosomes?",
+
+  "happiness_insulted_for_identity": "Insulted for their identity",
+  "happiness_dialog_insulted_for_identity_0": "It hurts to be insulted for my identity..",
+  "happiness_dialog_insulted_for_identity_1": "What did I do to harm them?",
+  "happiness_dialog_insulted_for_identity_2": "I just wanna live my life.",
+  "happiness_dialog_insulted_for_identity_3": "I didn't choose to be born this way!",
   
-  "status_title_just_kissed": "Just Kissed",
-  "status_description_just_kissed": "So lovey dovey",
-  
-  "status_title_disliked_sex": "Disliked Coupling",
-  "status_description_disliked_sex": "Sexual preferences were not met",
+  "task_insult_identity": "Insult Identities",
 
-  "status_title_enjoyed_sex": "Enjoyed Coupling",
-  "status_description_enjoyed_sex": "Sexual preferences were met",
+  "trait_transgender": "Transgender",
+  "trait_transgender_info": "They identify as another gender",
+  "trait_transgender_info_2": "Gender dysphoria is a bitch.",
 
-  "status_title_okay_sex": "Mildly Enjoyed Coupling",
-  "status_description_okay_sex": "Sexual preferences were met but it wasn't the best",
+  "culture_trait_transphobic": "Transphobic",
+  "culture_trait_transphobic_info": "They do not believe in identifying as another gender",
+  "culture_trait_transphobic_info_2": "To them, it's bonkers!",
 
-  "status_title_cheated_on": "Cheated On",
-  "status_description_cheated_on": "Their ex-lover cheated on them",
-
-  "happiness_went_on_date": "Went on date",
-  "happiness_dialog_went_on_date_0": "That was an amazing date!",
-  "happiness_dialog_went_on_date_1": "I love you so much..",
-  "happiness_dialog_went_on_date_2": "I've never been so giddy!",
-  "happiness_dialog_went_on_date_3": "I wonder what your eyes would look like at night..",
-  "happiness_dialog_went_on_date_4": "I must have gone fishing... because you're the perfect catch",
-
-  "happiness_adopted_baby": "Adopted a baby",
-  "happiness_dialog_adopted_baby_0": "It feels so good to finally have a baby.",
-  "happiness_dialog_adopted_baby_1": "Finally! A baby.",
-  "happiness_dialog_adopted_baby_2": "This is the happiest day of my life!",
-  "happiness_dialog_adopted_baby_3": "I can't wait to raise you little one.",
-
-  "happiness_did_not_want_baby": "Unwanted baby",
-  "happiness_dialog_did_not_want_baby_0": "Damn it! Now I have to take care of a toddler..",
-  "happiness_dialog_did_not_want_baby_1": "I do not want to take care of a baby for the rest of my life.",
-  "happiness_dialog_did_not_want_baby_2": "Are you kidding??",
-  "happiness_dialog_did_not_want_baby_3": "A baby?! Tell me you're joking.",
-
-  "happiness_okay_sex": "Mildly enjoyed coupling",
-  "happiness_dialog_okay_sex_0": "That was alright, they weren't the best at it.",
-  "happiness_dialog_okay_sex_1": "Meh, at least it was okay",
-  
-  "happiness_enjoyed_sex": "Enjoyed coupling",
-  "happiness_dialog_enjoyed_sex_0": "I loved that! I would be down to do them again.",
-  "happiness_dialog_enjoyed_sex_1": "Perfect, just how I like doing it.",
-
-  "happiness_disliked_sex": "Disliked coupling",
-  "happiness_dialog_disliked_sex_0": "I did not like any single bit of that.",
-  "happiness_dialog_disliked_sex_1": "Ugh that was terrible, I regret doing that.",
-  
-  "happiness_cheated_on": "Cheated on",
-  "happiness_dialog_cheated_on_0": "Why does this always happen to me..?",
-  "happiness_dialog_cheated_on_1": "Was it my fault?",
-  "happiness_dialog_cheated_on_2": "What did I do to deserve this?",
-  "happiness_dialog_cheated_on_3": "Where did it all go wrong?",
-
-  "happiness_breakup": "Broke up",
-  "happiness_dialog_breakup_0": "I wish it didn't have to end..",
-  "happiness_dialog_breakup_1": "At least I wasn't cheated on..",
-  "happiness_dialog_breakup_2": "I loved them so much.",
-  "happiness_dialog_breakup_3": "I'm sorry that we ended up this way.",
-  
-  "happiness_true_self": "Identity feels different",
-  "happiness_dialog_true_self_0": "It feels so good to realize myself.",
-  "happiness_dialog_true_self_1": "My orientation is the biggest part of what makes me, me.",
-  "happiness_dialog_true_self_2": "I'm going to own myself and I won't hide it!",
-  "happiness_dialog_true_self_3": "I wouldn't have it any other way.",
-
-  "happiness_orientation_fits": "Orientation isn't judged",
-  "happiness_dialog_orientation_fits_0": "It's nice that I can talk about my orientation without being berated for it.",
-  "happiness_dialog_orientation_fits_1": "I'm so happy that I am accepted here.",
-
-  "happiness_orientation_does_not_fit": "Orientation is despised",
-  "happiness_dialog_orientation_does_not_fit_0": "Why did I have to be born this way?",
-  "happiness_dialog_orientation_does_not_fit_1": "Why am I hated for who I am?",
-
-  "happiness_insulted_for_orientation": "Insulted for their orientation",
-  "happiness_dialog_insulted_for_orientation_0": "Why should they care who I have sex with or date?!",
-  "happiness_dialog_insulted_for_orientation_1": "What the hell is wrong with them!",
-  
-  "task_insult_orientation": "Insult Orientations",
-  "task_invite_for_sex": "Invite for Sex",
-  "task_kiss_lover": "Kiss Lover",
-  "task_have_sex_go": "Have Sex",
-  "task_reproduce_preservation": "Reproduce Preservation",
-  "task_try_sexual_ivf": "Try Sexual IVF",
-  "task_go_sexual_ivf": "Go Sexual IVF",
-  "task_go_and_wait_sexual_ivf": "Go and Wait Sexual IVF",
-  "task_action_sexual_ivf": "Start Sexual IVF",
-  "task_wait_sexual_ivf": "Wait Sexual IVF",
-  "task_try_date": "Try Date",
-  "task_action_date": "Going on Date",
-  "task_follow_action_date": "Following Date",
-
-  "love_selected": "Choose two units to love",
-  "love_selected_first": "Now select another unit",
-  "love_cancelled": "Force lover cancelled!",
-  "love_successful": "Force lover successful!",
-  "ForceLover": "Force Lover",
-  "ForceLover Description": "Force a unit to become lovers with another unit",
-
-  "trait_sex_indifferent": "Sex-Indifferent",
-  "trait_sex_indifferent_info": "Sex is not a requirement for them to be in a relationship.",
-  "trait_sex_indifferent_info_2": "They'd rather love than do the deed!",
-  
-  "trait_aromantic": "Aromantic",
-  "trait_aromantic_info": "They do not desire love unlike most",
-  "trait_aromantic_info_2": "It's not because they have not found the right person, they just feel this way",
-
-  "trait_homoromantic": "Homoromantic",
-  "trait_homoromantic_info": "They would like to only romantically be involved with the same sex",
-  "trait_homoromantic_info_2": "I love people who are like me!",
-
-  "trait_heteroromantic": "Heteroromantic",
-  "trait_heteroromantic_info": "They would like to only romantically be involved with the different sex",
-  "trait_heteroromantic_info_2": "Only 50% less boring!",
-
-  "trait_biromantic": "Biromantic",
-  "trait_biromantic_info": "They romantically love both sexes",
-  "trait_biromantic_info_2": "Pulls sexes without needing to fuck any of them. What's your excuse?",
-
-  "trait_asexual": "Asexual",
-  "trait_asexual_info": "They do not desire sex unlike most",
-  "trait_asexual_info_2": "Sex is so weird. It's soggy and time consuming.",
-  
-  "trait_heterosexual": "Heterosexual",
-  "trait_heterosexual_info": "They prefer having sex with the opposite sex",
-  "trait_heterosexual_info_2": "Aka, factory settings.",
-
-  "trait_homosexual": "Homosexual",
-  "trait_homosexual_info": "They prefer having sex with the same sex",
-  "trait_homosexual_info_2": "It ain't a choice, that much can be told.",
-
-  "trait_bisexual": "Bisexual",
-  "trait_bisexual_info": "They love having sex with both sexes",
-  "trait_bisexual_info_2": "Gotta swing both ways!",
-
-  "trait_faithful": "Faithful",
-  "trait_faithful_info": "They will never cheat on someone even if their romantic preference no longer matches their partner's sex",
-  "trait_faithful_info_2": "It's the right thing to do.",
-
-  "trait_unfaithful": "Unfaithful",
-  "trait_unfaithful_info": "They will never commit to their relationship",
-  "trait_unfaithful_info_2": "Careful with this one!",
-
-  "trait_abroromantic": "Abroromantic",
-  "trait_abroromantic_info": "Their romantic orientation may change over time",
-  "trait_abroromantic_info_2": "It'll be hard to commit to a lover.",
-
-  "trait_abrosexual": "Abrosexual",
-  "trait_abrosexual_info": "Their sexual orientation may change over time",
-  "trait_abrosexual_info_2": "Brains are complex.",
-
-  "culture_trait_homophobic": "Homophobic",
-  "culture_trait_homophobic_info": "They despise others who get romantically or sexually involved with the same sex as themselves",
-  "culture_trait_homophobic_info_2": "To them, it's disgusting.",
-
-  "culture_trait_heterophobic": "Heterophobic",
-  "culture_trait_heterophobic_info": "They despise others who get romantically or sexually involved with a different sex from themselves",
-  "culture_trait_heterophobic_info_2": "It's strange to think of two different sex people getting together.",
-
-  "culture_trait_incest": "Incest",
-  "culture_trait_incest_info": "Biologically related members may fall in love and have sex",
-  "culture_trait_incest_info_2": "Awkward!",
-
-  "culture_trait_orientationless": "Orientationless",
-  "culture_trait_orientationless_info": "The idea of orientations do not exist. They will only find lovers that they can breed with.",
-  "culture_trait_orientationless_info_2": "What's a sexuality or romantic orientation? That's witchcraft thinking!",
-
-  "culture_trait_committed": "Committed",
-  "culture_trait_committed_info": "They are commited to relationships and will never cheat or break up no matter how bad things get.",
-  "culture_trait_committed_info_2": "Loyalty is what matters!",
-
-  "culture_trait_mature_dating": "Mature Dating",
-  "culture_trait_mature_dating_info": "They will only date those that are in the same age stage as them.",
-  "culture_trait_mature_dating_info_2": "No more 18 year olds dating 90 year olds!",
-
-  "culture_trait_sexual_expectations": "Sexual Expectations",
-  "culture_trait_sexual_expectations_info": "Lovers may fulfill their sexual expectations with someone else without repercussions even if it is not their partner.",
-  "culture_trait_sexual_expectations_info_2": "They can express their sexual being!",
-
-  "culture_trait_scar_of_incest": "Scar of Incest",
-  "culture_trait_scar_of_incest_info": "Civilizations feel that incest is a crucial part to their culture and will never remove it.",
-  "culture_trait_scar_of_incest_info_2": "It is important to keep population counts high!",
-
-  "subspecies_trait_preservation": "Preservation",
-  "subspecies_trait_preservation_info": "If their relative population count to their max limits are low, they will try to find people that they can reproduce with no matter what, disregarding what their culture or orientation may deem appropriate.",
-  "subspecies_trait_preservation_info_2": "When the going gets tough, you do what you must to keep your legacies.",
-
-  "subspecies_trait_reproduction_same_sex": "Same Sex Reproduction",
-  "subspecies_trait_reproduction_same_sex_info": "Two of the same sex are required to reproduce",
-  "subspecies_trait_reproduction_same_sex_info_2": "Two indeed become more",
-
-  "Misc": "Developer Settings",
-  "SlowOnLog": "Slow on Log",
-  "SlowOnLog Description": "Slows the game automatically when logs happen when enabled. You can ignore this as a player.",
-
-  "Debug": "Debug",
-  "Debug Description": "Enables debug logs. Helpful for testing out a feature or needing to report information.",
-
-  "CrossSpecies": "Cross Species",
-  "AllowCrossSpeciesLove": "Allow Cross Species Love",
-  "AllowCrossSpeciesLove Description": "Whether different subspecies should be able to love each other.",
-  "MustBeSmart": "Species Must Be Sapient",
-  "MustBeSmart Description": "Whether the two subspecies involved have to have all their brain functions in order to love each other.",
-  "MustBeXenophile": "Initiator Must Be Xenophile",
-  "MustBeXenophile Description": "Whether the initiating lover has to be xenophile in order to love another subspecies unlike them. The receiving lover does NOT need to be xenophile, but they cannot be xenophobic."
+  "culture_trait_transphile": "Transphile",
+  "culture_trait_transphile_info": "They are extremely accepting of those who identify as a different gender",
+  "culture_trait_transphile_info_2": "That's so cool!"
 }

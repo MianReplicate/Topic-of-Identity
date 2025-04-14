@@ -1,14 +1,14 @@
 ﻿using ai.behaviours;
 
-namespace Better_Loving.Mian.CustomAssets.AI.CustomBehaviors;
-public class BehInsultOrientation : BehaviourActionActor
+namespace Topic_of_Identity.Mian.CustomAssets.AI.CustomBehaviors.identity;
+public class BehInsultIdentity : BehaviourActionActor
 {
     public override BehResult execute(Actor pActor)
     {
         var target = pActor.beh_actor_target?.a;
         if (target == null || Toolbox.DistTile(target.current_tile, pActor.current_tile) > 4.0)
             return BehResult.Stop;
-        target.changeHappiness("insulted_for_orientation");
+        target.changeHappiness("insulted_for_identity");
 
         if (Randy.randomChance(0.5f))
         {
