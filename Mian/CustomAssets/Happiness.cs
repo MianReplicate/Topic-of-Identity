@@ -16,6 +16,42 @@ namespace Better_Loving.Mian.CustomAssets
                 show_change_happiness_effect = true,
                 dialogs_amount = 4
             });
+            
+            Add(new HappinessAsset
+            {
+                id = "identity_does_not_fit",
+                value = -15,
+                pot_task_id = "crying",
+                path_icon = "ui/Icons/transgender",
+                ignored_by_psychopaths = true,
+                pot_amount = 5,
+                show_change_happiness_effect = true,
+                dialogs_amount = 2
+            });
+            
+            Add(new HappinessAsset
+            {
+                id = "identity_fits",
+                value = 15,
+                pot_task_id = "singing",
+                path_icon = "ui/Icons/transphobic",
+                ignored_by_psychopaths = true,
+                pot_amount = 5,
+                show_change_happiness_effect = true,
+                dialogs_amount = 2
+            });
+            
+            Add(new HappinessAsset
+            {
+                id = "true_gender",
+                value = 30,
+                pot_task_id = "singing",
+                path_icon = "ui/Icons/transgender",
+                ignored_by_psychopaths = true,
+                pot_amount = 5,
+                show_change_happiness_effect = true,
+                dialogs_amount = 4
+            });
         }
 
         private static void Add(HappinessAsset asset)

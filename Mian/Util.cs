@@ -38,6 +38,8 @@ namespace Topic_of_Identity.Mian
                 
                 pActor.data.set("old_name", currentName);
             }
+
+            pActor.changeHappiness("true_gender");
         }
         public static bool IsTrans(Actor pActor)
         {
