@@ -1,8 +1,9 @@
-﻿using NeoModLoader.services;
+﻿using HarmonyLib;
+using NeoModLoader.services;
 
 namespace Topic_of_Identity.Mian
 {
-    public class Util
+    public class TOIUtil
     {
         public static bool IsSmart(Actor actor)
         {
@@ -22,7 +23,7 @@ namespace Topic_of_Identity.Mian
 
             AssetManager.traits.add(trait);
         }
-
+        
         public static void SwapIdentity(Actor pActor)
         {
             pActor.data.sex = pActor.isSexFemale() ? ActorSex.Male : ActorSex.Female;
@@ -47,12 +48,12 @@ namespace Topic_of_Identity.Mian
         }
         public static void LogWithId(string message)
         {
-            LogService.LogInfo($"[{TopicOfLoving.Mod.GetDeclaration().Name}]: "+message);
+            LogService.LogInfo($"[{TopicOfIdentity.Mod.GetDeclaration().Name}]: "+message);
         }
         
         public static void Debug(string message)
         {
-            var config = TopicOfLoving.Mod.GetConfig();
+            var config = TopicOfIdentity.Mod.GetConfig();
             var slowOnLog = (bool)config["Misc"]["SlowOnLog"].GetValue();
             var debug = (bool)config["Misc"]["Debug"].GetValue();
 

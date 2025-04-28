@@ -22,7 +22,7 @@ public class BehFindTransgender : BehaviourActionActor
                 var num = Randy.randomInt(1, 4);
                 foreach (Actor pTarget in Finder.getUnitsFromChunk(pActor.current_tile, pChunkRadius, pRandom: pRandom))
                 {
-                    if (pTarget != pActor && pActor.isSameIslandAs(pTarget) && Util.IsTrans(pActor))
+                    if (pTarget != pActor && pActor.isSameIslandAs(pTarget) && TOIUtil.IsTrans(pActor))
                     {
                         pCollection.Add(pTarget);
                         if (((ICollection) pCollection).Count >= num)

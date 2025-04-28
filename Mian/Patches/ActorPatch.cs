@@ -16,7 +16,7 @@ public class ActorPatch
             var age = __instance.getAge();
             if (age >= 3)
             {
-                var chance = Math.Max(0.01f, (15f - age) / 100);
+                var chance = Math.Max(0.001f, (3f - (age/10f)) / 100);
                 if (Randy.randomChance(chance))
                 {
                     __instance.addTrait("transgender");

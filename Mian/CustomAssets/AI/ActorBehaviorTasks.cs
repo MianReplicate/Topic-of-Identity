@@ -1,7 +1,7 @@
 ﻿using ai.behaviours;
 using Topic_of_Identity.Mian.CustomAssets.AI.CustomBehaviors.identity;
 
-namespace Better_Loving.Mian.CustomAssets.AI
+namespace Topic_of_Identity.Mian.CustomAssets.AI
 {
     public class ActorBehaviorTasks
     {

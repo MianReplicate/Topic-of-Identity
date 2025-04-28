@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace Better_Loving.Mian.CustomAssets
+namespace Topic_of_Identity.Mian.CustomAssets
 {
     public class CultureTraits
     {
@@ -12,6 +12,7 @@ namespace Better_Loving.Mian.CustomAssets
                 id = "transphobic",
                 group_id = "worldview",
                 needs_to_be_explored = true,
+                spawn_random_trait_allowed = true,
                 rarity = Rarity.R1_Rare,
                 can_be_in_book = true,
                 can_be_removed = true,
@@ -23,6 +24,7 @@ namespace Better_Loving.Mian.CustomAssets
                 id = "transphile",
                 group_id = "worldview",
                 needs_to_be_explored = true,
+                spawn_random_trait_allowed = true,
                 rarity = Rarity.R1_Rare,
                 can_be_in_book = true,
                 can_be_removed = true,
@@ -35,8 +37,8 @@ namespace Better_Loving.Mian.CustomAssets
             transphile.opposite_traits = new HashSet<CultureTrait>();
             transphile.opposite_traits.Add(transphobic);
             
-            Add(transphile, new List<string>{"angle", "elf"}, new List<string>{"biome_crystal", "biome_enchanted"});
-            Add(transphobic, new List<string>{"orc", "demon"}, new List<string>{"biome_corrupted"});
+            Add(transphile);
+            Add(transphobic);
         }
 
         private static void Add(CultureTrait trait, List<string> actorAssets=null, List<string> biomeAssets=null)

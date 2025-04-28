@@ -9,7 +9,7 @@ namespace Topic_of_Identity.Mian.CustomAssets
             {
                 id = "identity",
                 rate = 0.5f,
-                check = actor => Util.IsTrans(actor) && (actor.hasCultureTrait("transphobic") || actor.hasCultureTrait("transphile")),
+                check = actor => TOIUtil.IsTrans(actor) && (actor.hasCultureTrait("transphobic") || actor.hasCultureTrait("transphile")),
                 pot_fill = (actor, sprites) =>
                 {
                     sprites.Add(AssetManager.traits.get("transgender").getSprite());

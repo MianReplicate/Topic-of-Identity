@@ -2,7 +2,7 @@
 using HarmonyLib;
 using Topic_of_Identity.Mian;
 
-namespace Better_Loving.Mian.CustomAssets.AI;
+namespace Topic_of_Identity.Mian.CustomAssets.AI;
 
 public class Decisions
 {
@@ -16,7 +16,7 @@ public class Decisions
             priority = NeuroLayer.Layer_2_Moderate,
             path_icon = "ui/Icons/culture_traits/transphobic",
             cooldown = 30,
-            action_check_launch = actor => actor.hasCultureTrait("transphobic") && !Util.IsTrans(actor),
+            action_check_launch = actor => actor.hasCultureTrait("transphobic") && !TOIUtil.IsTrans(actor),
             weight = 0.5f,
             list_civ = true,
             only_safe = true

@@ -19,7 +19,7 @@ namespace Topic_of_Identity.Mian.CustomAssets
                     if (target == null)
                         return false;
                     var actor = (Actor) target;
-                    Util.SwapIdentity(actor);
+                    TOIUtil.SwapIdentity(actor);
                     return true;
                 },
                 action_on_remove = (target, trait) =>
@@ -27,7 +27,7 @@ namespace Topic_of_Identity.Mian.CustomAssets
                     if (target == null)
                         return false;
                     var actor = (Actor) target;
-                    Util.SwapIdentity(actor);
+                    TOIUtil.SwapIdentity(actor);
                     return true;
                 }
             });
@@ -36,7 +36,7 @@ namespace Topic_of_Identity.Mian.CustomAssets
         private static void Add(ActorTrait trait)
         {
             trait.path_icon = "ui/Icons/actor_traits/"+trait.id;
-            Util.AddActorTrait(trait);
+            TOIUtil.AddActorTrait(trait);
         }
     }
 }
