@@ -31,7 +31,9 @@ using NeoModLoader.General;
 
 // dysphoria type: social (not really sure atm what this will be)
 
-// dysphoria type: permanent (some dysphoria just does not go away for some trans ppl)
+// dysphoria type: mind
+
+// some dysphoria types will be randomized as permanent on an actor or will still flare up depending on conditions
 
 // while units socialize, there is a chance for accidental misgender
 // decision task to compliment someone based on looks. Misgendering can happen here and will increase dysphoria meter.
@@ -72,13 +74,15 @@ namespace Topic_of_Identity.Mian
             }
 
             LM.ApplyLocale();
+
+            // massive rework in bound!
             
-            ActorTraits.Init();
-            CultureTraits.Init();
-            Happiness.Init();
-            CommunicationTopics.Init();
-            ActorBehaviorTasks.Init();
-            Decisions.Init();
+            // ActorTraits.Init();
+            // CultureTraits.Init();
+            // Happiness.Init();
+            // CommunicationTopics.Init();
+            // ActorBehaviorTasks.Init();
+            // Decisions.Init();
         }
         private void Awake()
         {
